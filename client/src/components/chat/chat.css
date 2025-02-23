@@ -1,0 +1,220 @@
+/* Styles for the logout button */
+.logout-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f44336;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Changes logout button color on hover */
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Styles for the restart chat button*/
+.restart-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Changes restart button color on hover */
+.restart-button:hover {
+  background-color: #45a049;
+}
+
+/* Chat container positioned at the center of the page */
+.chat-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  min-height: 550px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Chat window to display messages with a scrolling effect */
+.chat-window {
+  flex: 1;
+  max-height: 450px;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 15px;
+}
+
+/* Styles for user messages */
+.user-message {
+  text-align: right;
+  background-color: #d4f8e2;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+  max-width: 80%;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  color: black;
+}
+
+/* Styles for bot messages  */
+.bot-message {
+  text-align: left;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+  max-width: 80%;
+  align-self: flex-start;
+  margin-bottom: 10px;
+  color: black;
+}
+
+/* Typing indicator for simulating bot response delay */
+.typing-indicator {
+  display: flex;
+  gap: 6px;
+  padding: 8px 12px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  align-self: flex-start;
+}
+
+/* Styles for the animated typing dots */
+.typing-indicator span {
+  width: 8px;
+  height: 8px;
+  background-color: #666;
+  border-radius: 50%;
+  animation: blink 1.5s infinite ease-in-out;
+}
+
+/* Set delay for each dot in the typing animation */
+.typing-indicator span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Blinking effect for typing indicator dots */
+@keyframes blink {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Input area container at the bottom of the chat */
+.input-area {
+  display: flex;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  gap: 8px;
+}
+
+/* Input field for user messages */
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+/* Placeholder text color in input field */
+input::placeholder {
+  color: #aaa;
+}
+
+/* Wrapper for the send button with a green border */
+.send-button-wrapper {
+  background-color: #4CAF50;
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Send button styles */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Send button hover effect */
+button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Container for displaying receipts */
+.receipt-container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  overflow-x: auto;
+  margin-bottom: 15px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Styles for receipt text formatting */
+.receipt-container pre {
+  font-size: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap;
+  line-height: 1.4;
+  word-break: break-word;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  text-align: left;
+  margin: 0;
+}
