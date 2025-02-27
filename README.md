@@ -79,15 +79,4 @@ npm start
 
 The app should now be running at **http://localhost:3000/** 🚀
 
-## 🧪 Running Tests
-
-To run tests:
-
-```sh
-cd client
-npm test
-```
-
----
-
 ### 🎉 Happy Coding & Pet Care! 🐶🐱

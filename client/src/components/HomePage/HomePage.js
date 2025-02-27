@@ -6,7 +6,7 @@ import { Footer } from "./Footer";
 
 function HomePage() {
   useEffect(() => {
-    document.title = " Home"; // Change this to your preferred title
+    document.title = " Home";
   }, []);
 
   return (

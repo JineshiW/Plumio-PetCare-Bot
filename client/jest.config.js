@@ -1,5 +1,5 @@
 module.exports = {
-    testEnvironment: "jsdom", // Ensures React tests run in a browser-like environment
+    testEnvironment: "jsdom", // Ensures React tests run in a virtual DOM
     transform: {
       "^.+\\.jsx?$": "babel-jest",
     },

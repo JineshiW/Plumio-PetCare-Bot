@@ -82,7 +82,6 @@ export const Banner = () => {
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
-                  {/* Description text */}
                   <p>
                     <b>Instant Vet Appointments—Just a Chat Away.</b> Experience
                     hassle-free pet care with our AI-powered chatbot that
